@@ -3,18 +3,18 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Julian
-middle_name: 
-last_name: Tachella
-email: julian.tachella@cnrs.fr
+first_name: Bernardin
+middle_name: TAMO 
+last_name: AMOUGOU  
+email: bernardin.tamo@aims-cameroon.org
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Machine learning research scientist at CNRS.
+  Dual PhD Candidate Statistics & AI (Heriot-Watt University & Université de Paris Cité).
 footer_text: >
-keywords: machine learning, signal processing, computational imaging, CNRS, deep learning  # add your own keywords or leave empty
+keywords: machine learning, signal processing, computational imaging, diffusion models, bayesian inference, deep learning, inverse problems, sampling from the posterior  # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 📡 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://tachella.github.io # the base hostname & protocol for your site
+url: https://taber.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -64,22 +64,22 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: tachella # your GitHub user name
-gitlab_username: Tachella # your GitLab user name
-x_username: TachellaJulian # your X handle
+github_username: Tabermaths # your GitHub user name
+gitlab_username: # your GitLab user name
+x_username: Taberdumonde # your GitLab user name # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
+linkedin_username: bernardin-tamo-amougou # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: u_hH-fUAAAAJ&hl # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: # your ORCID ID
+orcid_id: 0009-0007-8787-9861 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 osf_id: # your OSF ID
-research_gate_  : # your profile on ResearchGate
+research_gate_  : Bernardin Tamo Amougou # your profile on ResearchGate
 scopus_id: # your profile on Scopus
 blogger_url: # your blogger URL
 work_url: # work page URL
@@ -109,7 +109,7 @@ contact_note: >
 
 # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
 # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-google_analytics: G-GG3QB6QQXF # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+google_analytics: G-PK1KQC16H9 # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
@@ -120,7 +120,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Imaging blog # blog_name will be displayed in your blog page
+blog_name:  # blog_name will be displayed in your blog page
 blog_description: 
 permalink: /blog/:title/
 
@@ -278,8 +278,8 @@ display_categories: [] # these categories will be displayed on the front page of
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Tachella]
-  first_name: [Julian]
+  last_name: [TAMO AMOUGOU]
+  first_name: [Bernardin]
 
   style: apa
   locale: en
@@ -304,9 +304,9 @@ scholar:
 
 # Display different badges withs stats for your publications
 enable_publication_badges:
-  altmetric: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
-  dimensions: true # Dimensions badge (https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  altmetric: false # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
+  dimensions: false # Dimensions badge (https://badge.dimensions.ai/)
+  google_scholar: false # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
