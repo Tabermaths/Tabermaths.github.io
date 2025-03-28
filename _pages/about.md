@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://www.hw.ac.uk/'>Heriot-Watt University</a> & <a href='http://www.u-paris.fr/'>Université Paris-Cité</a>
+subtitle: <a href='https://www.hw.ac.uk/'> Heriot-Watt University </a> & <a href='http://www.u-paris.fr/'>Université Paris-Cité</a>
 
 profile:
   align: right
