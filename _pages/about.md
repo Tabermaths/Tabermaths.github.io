@@ -7,7 +7,7 @@ subtitle: <a href='https://www.hw.ac.uk/'> Heriot-Watt University </a> & <a href
 profile:
   align: right
   image: profile2.jpg
-  more_info: <p>bt2027@hw.ac.uk</p>
+  more_info: <i class="fas fa-envelope"></i> <a href="mailto:bt2027@hw.ac.uk">bt2027@hw.ac.uk</a>
 
   
 
