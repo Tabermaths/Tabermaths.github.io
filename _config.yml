@@ -70,7 +70,7 @@ x_username: Taberdumonde # your GitLab user name # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: bernardin-tamo-amougou # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: u_hH-fUAAAAJ&hl # your Google Scholar ID
+scholar_userid: # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: 0009-0007-8787-9861 # your ORCID ID
