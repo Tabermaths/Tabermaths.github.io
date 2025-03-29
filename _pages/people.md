@@ -20,9 +20,9 @@ nav: true
 
 
 ##### [Université Paris Cité](https://u-paris.fr/) 
--[Apr 22 - Sep 22] Prof. [Franca Hoffmann](https://francahoffmann.wordpress.com/) Assistant Professor in [Computing and Mathematical Sciences](https://www.cms.caltech.edu/) at [Caltech](https://www.caltech.edu/) and  International Scientific Advisor at [Quantum Leap Africa](https://quantumleapafrica.org/), at the [African Institute for Mathematical Sciences (AIMS)](https://nexteinstein.org/).
--[Apr 22 - Sep 22] Dr. [Nikolas Nüsken](https://www.kcl.ac.uk/people/nikolas-nusken) Lecturer in Mathematical Data Science at [King's College London](https://www.kcl.ac.uk/).
--[Apr 22 - Sep 22] Prof. [Steve Kroon](https://kroon.cs.sun.ac.za/) Associate Professor: Computer Science, [Stellenbosch University](https://www.sun.ac.za/english).
+- [Apr 22 - Sep 22] Prof. [Franca Hoffmann](https://francahoffmann.wordpress.com/) Assistant Professor in [Computing and Mathematical Sciences](https://www.cms.caltech.edu/) at [Caltech](https://www.caltech.edu/) and  International Scientific Advisor at [Quantum Leap Africa](https://quantumleapafrica.org/), at the [African Institute for Mathematical Sciences (AIMS)](https://nexteinstein.org/).
+- [Apr 22 - Sep 22] Dr. [Nikolas Nüsken](https://www.kcl.ac.uk/people/nikolas-nusken) Lecturer in Mathematical Data Science at [King's College London](https://www.kcl.ac.uk/).
+- [Apr 22 - Sep 22] Prof. [Steve Kroon](https://kroon.cs.sun.ac.za/) Associate Professor: Computer Science, [Stellenbosch University](https://www.sun.ac.za/english).
 
 
 
