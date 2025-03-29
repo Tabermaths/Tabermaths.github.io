@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://www.hw.ac.uk/uk/schools/mathematical-computer-sciences.htm'> School of Mathematics and Computer Sciences </a> ; <a href='https://www.hw.ac.uk/'> Heriot-Watt University </a> & <a href='https://map5.mi.parisdescartes.fr/'>MAP5 </a>;<a href='http://www.u-paris.fr/'>Université Paris-Cité</a>
+subtitle: <a href='https://www.hw.ac.uk/uk/schools/mathematical-computer-sciences.htm'> School of Mathematics and Computer Sciences </a> , <a href='https://www.hw.ac.uk/'> Heriot-Watt University </a> & <a href='https://map5.mi.parisdescartes.fr/'>MAP5 </a>,<a href='http://www.u-paris.fr/'>Université Paris-Cité</a>
 
 profile:
   align: right
