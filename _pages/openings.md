@@ -4,7 +4,7 @@ permalink: /Join Us/
 title: Edinburgh and Paris views
 img1: assets/img/Edinburgh.webp
 img2: assets/img/MAP5view.JPG
-description: Openings in ENS Lyon
+description: Edinburgh and Paris
 nav: true
 ---
 
