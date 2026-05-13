@@ -2,18 +2,15 @@
 layout: page
 permalink: /talks/
 title: Talks
-img: assets/img/eusipco_talk.jpg
-description: Some selected talks
-years: [2024, 2023, 2022, 2021, 2020, 2019]
+description: Selected talks and presentations
 nav: true
 ---
 
-<!-- _pages/publications.md -->
+This page lists selected talks, seminars, posters, and research presentations related to my work on Bayesian imaging, inverse problems, uncertainty quantification, and machine learning.
+
+<!-- _pages/talks.md -->
 <div class="publications">
 
-{%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f talks -q @*[year={{y}}]* %}
-{% endfor %}
+{% bibliography -f talks %}
 
 </div>
