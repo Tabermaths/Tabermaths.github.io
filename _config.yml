@@ -6,17 +6,17 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Bernardin
 middle_name: TAMO 
 last_name: AMOUGOU  
-email: bernardin.tamo@aims-cameroon.org
+email: bt2027@hw.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Dual PhD Candidate Statistics & AI (Heriot-Watt University & Université de Paris Cité).
+  Dual PhD candidate in Bayesian imaging, machine learning, uncertainty quantification, and inverse problems at Heriot-Watt University and Université Paris Cité.
 footer_text: >
 keywords: machine learning, signal processing, computational imaging, diffusion models, bayesian inference, deep learning, inverse problems, sampling from the posterior  # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 📡 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://taber.github.io # the base hostname & protocol for your site
+url: https://tabermaths.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -47,7 +47,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 900px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -56,9 +56,9 @@ max_width: 800px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: assets/img/profile_bernnardin_2026.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -70,7 +70,7 @@ x_username: Taberdumonde # your GitLab user name # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: bernardin-tamo-amougou # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: qlbzb1AAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: 0009-0007-8787-9861 # your ORCID ID
@@ -176,7 +176,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 

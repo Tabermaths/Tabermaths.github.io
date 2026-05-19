@@ -2,8 +2,9 @@
 layout: page
 permalink: /people/
 title: People
-description: Supervision Team
+description: Supervisors and collaborators
 nav: true
+nav_order: 6
 ---
 
 
@@ -29,7 +30,15 @@ nav: true
 ##### [AIMS Cameroon](https://aims-cameroon.org/home/)
 - [2021] Dr. [Nikolas Nüsken](https://www.kcl.ac.uk/people/nikolas-nusken) Lecturer in Mathematical Data Science at [King's College London](https://www.kcl.ac.uk/).
 
+##### [Hausdorff Center for Mathematics](https://www.hcm.uni-bonn.de/), Bonn
+- [2022] Dr. [Nikolas Nüsken](https://www.kcl.ac.uk/people/nikolas-nusken) — Junior researcher internship on deep learning, kernel learning, and PDE solvers.
 
-#### Colaborators
+#### Collaborators
 
-I have various collaborations with researchers in UK, France, Danemark, Canada and South Africa.
+I collaborate with researchers in the United Kingdom, France, Denmark, Germany, and South Africa on Bayesian imaging, inverse problems, uncertainty quantification, and machine learning.
+
+- [Jasper M. Everink](https://scholar.google.com/citations?user=everink) — Heriot-Watt University, UK
+- [Barbara Pascal](https://scholar.google.com/citations?user=pascal) — CNRS, France
+- [Franca Hoffmann](https://francahoffmann.wordpress.com/) — Caltech, USA
+- [Nikolas Nüsken](https://www.kcl.ac.uk/people/nikolas-nusken) — King's College London, UK
+- [Steve Kroon](https://kroon.cs.sun.ac.za/) — Stellenbosch University, South Africa

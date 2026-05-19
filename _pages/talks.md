@@ -2,13 +2,15 @@
 layout: page
 permalink: /talks/
 title: Talks
-img: assets/img/eusipco_talk.jpg
-description: Some selected talks
-years: [2024, 2023, 2022, 2021, 2020, 2019]
+description: Talks, posters, hackathons, and research presentations
 nav: true
+nav_order: 4
+years: [2026, 2025, 2024, 2022]
 ---
 
-<!-- _pages/publications.md -->
+This page lists talks, posters, seminars, hackathons, and research presentations related to my work on Bayesian imaging, inverse problems, uncertainty quantification, and machine learning.
+
+<!-- _pages/talks.md -->
 <div class="publications">
 
 {%- for y in page.years %}

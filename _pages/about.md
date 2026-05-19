@@ -2,28 +2,49 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://www.hw.ac.uk/uk/schools/mathematical-computer-sciences.htm'> School of Mathematics and Computer Sciences </a> , <a href='https://www.hw.ac.uk/'> Heriot-Watt University </a> & <a href='https://map5.mi.parisdescartes.fr/'>MAP5 </a>,<a href='http://www.u-paris.fr/'>Université Paris-Cité</a>
+subtitle: <a href='https://www.hw.ac.uk/uk/schools/mathematical-computer-sciences.htm'>School of Mathematical and Computer Sciences</a>, <a href='https://www.hw.ac.uk/'>Heriot-Watt University</a> & <a href='https://map5.mi.parisdescartes.fr/'>MAP5</a>, <a href='https://u-paris.fr/'>Université Paris Cité</a>
 
 profile:
   align: right
-  image: Gimage.jpg
-  more_info: <i class="fas fa-envelope"></i> <a href="mailto:bt2027@hw.ac.uk"> bt2027@hw.ac.uk </a>
+  image: profile_bernnardin_2026.jpg
+  image_circular: true
+  more_info: >
+    <p><i class="fas fa-envelope"></i> <a href="mailto:bt2027@hw.ac.uk">bt2027@hw.ac.uk</a></p>
+    <p><i class="ai ai-google-scholar"></i> <a href="https://scholar.google.com/citations?user=qlbzb1AAAAAJ">Google Scholar</a></p>
 
-
-  
-
-news: false   # includes a list of news items
-selected_papers: yes # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+nav_order: 1
+news: true
+latest_posts: false
+selected_papers: true
+social: true
 ---
-I am a dual Ph.D. candidate at Heriot-Watt University and Université de Paris Cité, under the supervision of Dr. [Andres Almansa](https://helios2.mi.parisdescartes.fr/~aalmansa/HomePage/), Prof. [Julie Delon](https://judelo.github.io/), and Prof. [Marcelo Pereyra](https://www.macs.hw.ac.uk/~mp71/index.html). 
 
-My research focuses on developing stochastic quantitative imaging methods, particularly utilizing data-driven priors encoded by neural networks.
+I am a dual PhD candidate at [Heriot-Watt University](https://www.hw.ac.uk/) and [Université Paris Cité](https://u-paris.fr/), working at the intersection of Bayesian statistics, machine learning, and computational imaging. My doctoral research is supervised by Dr. [Andres Almansa](https://helios2.mi.parisdescartes.fr/~aalmansa/HomePage/), Prof. [Julie Delon](https://judelo.github.io/), and Prof. [Marcelo Pereyra](https://www.macs.hw.ac.uk/~mp71/index.html).
 
-My academic journey commenced at the [African Institute for Mathematical Sciences (AIMS) Cameroon](https://aims-cameroon.org/), where I earned a Master's degree in Data Science under the guidance of Dr. [Nicolas Nusken](https://www.kcl.ac.uk/people/nikolas-nusken) and was honored as the 2021 Valedictorian. AIMS is a pan-African network of centers of excellence dedicated to postgraduate training in mathematical sciences, research, and public engagement in STEM fields.
+My research focuses on uncertainty-aware methods for imaging inverse problems, with a particular interest in self-supervised learning, data-driven priors, posterior sampling, and scalable Bayesian computation for medical and scientific imaging.
 
-My research lies at the intersection of  statistics,  machine learning and mathematics. I am particularly interested in leveraging contemporary artificial intelligence techniques to develop methodologies applicable to inverse problems across various scientific domains, including medical imaging. In essence, my work aims to harness AI to advance scientific discovery.
+Before my PhD, I was a research engineer at MAP5, Université Paris Cité, where I worked on stochastic and optimal-transport-inspired algorithms for imaging problems with learned priors. I also completed a Master 2 in Mathematics, Modelling and Machine Learning at Université Paris Cité.
 
-Specifically, I focus on robust uncertainty quantification in imaging inverse problems, automatic calibration and verification of statistical image models, and the development of scalable Bayesian computational algorithms derived from stochastic diffusion processes. I am committed to applying these methodologies to imaging challenges with significant social or environmental impact.
+Earlier, I completed the Structured Master's Degree in Data Science at [AIMS Cameroon](https://aims-cameroon.org/), where I was the [2021 Valedictorian](https://aims-cameroon.org/data-science-student-bernardin-tamo-amougou-is-2021-valedictorian/).
 
-Dedicated to advancing quantitative imaging, my goal is to bridge the gap between complex mathematical theories and practical applications, thereby contributing to advancements in scientific understanding and technological innovation. 
+My long-term goal is to build mathematically grounded AI tools for imaging problems where reconstructions inform scientific discovery, medical decision-making, or other high-impact applications.
+
+**Research interests:** Bayesian imaging, inverse problems, uncertainty quantification, posterior sampling, diffusion and flow models, self-supervised learning, conformal prediction, medical imaging.
+
+## Awards and Scholarships
+
+| Year | Award |
+|------|-------|
+| 2024 | [France Excellence EIFFEL Scholarship](https://www.campusfrance.org/en/france-excellence-eiffel-scholarship-program) (French Ministry for Europe and Foreign Affairs) |
+| 2023 | [James Watt Studentship](https://www.hw.ac.uk/), Heriot-Watt University |
+| 2021 | [SMARTS-UP Scholarship](https://u-paris.fr/language/en/call-for-applications-smarts-up-a-mobility-scholarship-program-for-international-students/), Université Paris Cité |
+| 2021 | [Valedictorian](https://aims-cameroon.org/data-science-student-bernardin-tamo-amougou-is-2021-valedictorian/), AIMS Cameroon Cohort 2021 |
+| 2021 | Gender Balance Prize — Three Minute Thesis, AIMS Cameroon |
+| 2020 | AIMS Cameroon & Cameroon Government Scholarship (Master's in Data Science) |
+| 2019 | Best Student in Mathematical Modelling in Economics and Finance, CETIC |
+| 2018 | [World Bank Scholarship](https://www.worldbank.org/en/news/immersive-story/2025/05/13/the-african-centers-of-excellence-10-years-of-innovation-and-impact) through the African Center of Excellence in ICT (Master 1 & 2 in Computational Finance) |
+
+## Training Schools
+
+- **QLA Doctoral Training School** — *Foundational Methods in Data Science*, Quantum Leap Africa, AIMS Rwanda, Kigali, March 2022.
+- **11th Gene Golub SIAM Summer School** — *The Theory and Practice of Deep Learning*, AIMS South Africa, July 2021.

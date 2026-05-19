@@ -2,10 +2,12 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: 
-years: [2025, 2024]
+description: Research publications and preprints
+years: [2025]
 nav: true
+nav_order: 3
 ---
+
 <!-- _pages/publications.md -->
 <div class="publications">
 
