@@ -40,3 +40,11 @@ My teaching experience spans mathematics, statistics, probability, optimisation,
 - **F17XB** — Mathematics for Engineers and Scientists 2, 2024--2025.
 - **F18XD** — Mathematics for Engineers and Scientists 4, 2024--2025.
 - **F17GA** — Problem Solving, 2024--2025.
+
+## Other teaching experience
+
+| Period | Role | Institution | Description |
+|--------|------|-------------|-------------|
+| 2022–2023 | Teaching Assistant | [Neuromatch Academy](https://neuromatch.io/) (Worldwide) | Taught machine learning and deep learning techniques to groups of 8–12 students in computational biology, computational finance, and computational neuroscience. Supervised 2 projects. |
+| 2018–2020 | Certified Mathematics Teacher | Government Technical and Bilingual High School of Bonaberi, Douala, Cameroon | Full-time secondary school mathematics teacher. |
+| 2018 | Teaching Assistant | Government High School of Cité Verte, Yaoundé, Cameroon | Giving lectures in mathematics. |

@@ -27,3 +27,12 @@ I am interested in diffusion, flow-based, and variational methods for scalable p
 - Posterior sampling with generative models for uncertainty quantification.
 - Equivariant and symmetry-aware learning for inverse problems.
 - Reliable AI tools for scientific and medical imaging.
+
+## Research experience
+
+| Period | Position | Institution | Topic |
+|--------|----------|-------------|-------|
+| 2023–present | PhD Candidate | Heriot-Watt University & Université Paris Cité | Stochastic quantitative imaging methods with data-driven priors encoded by neural networks |
+| 2022–2023 | Research Engineer | MAP5, Université Paris Cité | Image deblurring and colorization using stochastic and optimal transport methods with learned priors |
+| 2022 | Junior Researcher (Internship) | Hausdorff Center for Mathematics, Bonn, Germany | Deep learning, kernel learning, and PDE solvers |
+| 2022 | Teaching Assistant | Neuromatch Academy (Worldwide) | Machine learning and deep learning for computational biology, finance, and neuroscience. Supervised 2 projects. |
