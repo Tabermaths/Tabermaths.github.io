@@ -33,7 +33,7 @@ nav_order: 6
 
 I collaborate with researchers in the United Kingdom, France, Denmark, Germany, and South Africa on Bayesian imaging, inverse problems, uncertainty quantification, and machine learning.
 
-- [Jasper M. Everink](https://scholar.google.com/citations?user=everink) — Heriot-Watt University, UK
+- [Jasper M. Everink](https://jeverink.github.io/) — University of Eastern Finland (formerly PhD student at Technical University of Denmark)
 - [Barbara Pascal](https://scholar.google.com/citations?user=pascal) — CNRS, France
 - [Franca Hoffmann](https://francahoffmann.wordpress.com/) — Caltech, USA
 - [Nikolas Nüsken](https://www.kcl.ac.uk/people/nikolas-nusken) — King's College London, UK

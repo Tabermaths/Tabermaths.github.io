@@ -5,7 +5,8 @@ title: Edinburgh and Paris views
 img1: assets/img/Edinburgh.webp
 img2: assets/img/MAP5view.JPG
 description: Edinburgh and Paris
-nav: false
+nav: true
+nav_order: 7
 ---
 
 <div class="row">
