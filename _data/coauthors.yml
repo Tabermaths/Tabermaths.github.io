@@ -1,34 +1,31 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"pereyra":
+  - firstname: ["Marcelo", "M."]
+    url: https://www.macs.hw.ac.uk/~mp71/index.html
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"almansa":
+  - firstname: ["Andres", "A."]
+    url: https://helios2.mi.parisdescartes.fr/~aalmansa/HomePage/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"delon":
+  - firstname: ["Julie", "J."]
+    url: https://judelo.github.io/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"everink":
+  - firstname: ["Jasper", "Jasper M.", "J. M."]
+    url: https://scholar.google.com/citations?user=everink
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"pascal":
+  - firstname: ["Barbara", "B."]
+    url: https://scholar.google.com/citations?user=pascal
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"nusken":
+  - firstname: ["Nikolas", "N."]
+    url: https://www.kcl.ac.uk/people/nikolas-nusken
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"hoffmann":
+  - firstname: ["Franca", "F."]
+    url: https://francahoffmann.wordpress.com/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"kroon":
+  - firstname: ["Steve", "S."]
+    url: https://kroon.cs.sun.ac.za/

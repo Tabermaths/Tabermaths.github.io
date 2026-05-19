@@ -2,8 +2,9 @@
 layout: page
 permalink: /people/
 title: People
-description: Supervision Team
+description: Supervisors and collaborators
 nav: true
+nav_order: 6
 ---
 
 
@@ -30,6 +31,6 @@ nav: true
 - [2021] Dr. [Nikolas Nüsken](https://www.kcl.ac.uk/people/nikolas-nusken) Lecturer in Mathematical Data Science at [King's College London](https://www.kcl.ac.uk/).
 
 
-#### Colaborators
+#### Collaborators
 
-I have various collaborations with researchers in UK, France, Danemark, Canada and South Africa.
+I collaborate with researchers in the United Kingdom, France, Denmark, Canada, and South Africa on Bayesian imaging, inverse problems, uncertainty quantification, and machine learning.
