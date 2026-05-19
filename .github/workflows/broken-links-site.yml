@@ -12,14 +12,14 @@ jobs:
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2.2"
           bundler-cache: true
-      - name: Update _config.yml ⚙️
+      - name: Update _config.yml
         uses: fjogeleit/yaml-update-action@main
         with:
           commitChange: false
@@ -29,18 +29,18 @@ jobs:
               "giscus.repo": "${{ github.repository }}",
               "baseurl": ""
             }
-      - name: Install and Build 🔧
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+      - name: Install and Build
         run: |
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
           bundle exec jekyll build --lsi
-      - name: Purge unused CSS 🧹
+      - name: Check for broken links
         run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
-      - name: Link Checker 🔗
-        uses: lycheeverse/lychee-action@v1.9.0
-        with:
-          fail: true
-          # only check local links
-          args: --offline --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
+          bundle exec htmlproofer _site \
+            --disable-external \
+            --ignore-urls "/.*localhost.*/,/.*127.0.0.1.*/" \
+            --allow-missing-href \
+            --allow-hash-href \
+            --no-enforce-https
