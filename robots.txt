@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://taber.github.io/sitemap.xml
+Sitemap: https://tabermaths.github.io/sitemap.xml
