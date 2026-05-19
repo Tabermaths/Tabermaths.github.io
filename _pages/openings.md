@@ -11,13 +11,13 @@ nav_order: 7
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Edinburgh.jpg" title="Montain view Edinburgh" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Edinburgh.jpg" title="Montain view Edinburgh" alt="Mountain view from Edinburgh" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/MAP5view.jpg" title="Vue du MAP5" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/MAP5view.jpg" title="Vue du MAP5" alt="View from MAP5 laboratory in Paris" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 If you are a  highly motivated students/postdocs who want to do research in machine learning and signal processing in a stimulating environent, Heriot-Watt University in the  beautiful cultural center city of Edinburgh and Universite de Paris Cite in the Capital and Largest city of France are best choices.
