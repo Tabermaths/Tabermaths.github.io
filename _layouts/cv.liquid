@@ -1,117 +1,328 @@
 ---
 layout: default
 ---
-{% unless site.data.resume %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
+{% assign cv = site.data.resume %}
+{% assign basics = cv.basics %}
 
-    <article>
-      <div class="cv">
-        {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-            <div>
-              {% if entry.type == 'list' %}
-                {% include cv/list.liquid %}
-              {% elsif entry.type == 'map' %}
-                {% include cv/map.liquid %}
-              {% elsif entry.type == 'nested_list' %}
-                {% include cv/nested_list.liquid %}
-              {% elsif entry.type == 'time_table' %}
-                {% include cv/time_table.liquid %}
-              {% elsif entry.type == 'list_groups' %}
-                {% include cv/list_groups.liquid %}
+<main class="cv-page" id="main-content">
+  <header class="cv-hero" aria-labelledby="cv-name">
+    <div class="cv-hero-copy">
+      <p class="cv-eyebrow">Curriculum vitae</p>
+      <h1 id="cv-name">{{ basics.name }}</h1>
+      <p class="cv-headline">{{ basics.label }}</p>
+      <p class="cv-hero-summary">{{ basics.summary }}</p>
+    </div>
+
+    <div class="cv-actions" aria-label="CV actions">
+      <a
+        class="cv-action cv-action-primary"
+        href="{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}"
+        download
+        aria-label="Download Bernardin Tamo Amougou's CV as a PDF"
+      >
+        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+        Download PDF CV
+      </a>
+      <a class="cv-action" href="mailto:{{ basics.email }}">
+        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+        Email Bernardin
+      </a>
+    </div>
+
+    <div class="cv-contact" aria-label="Professional links">
+      <span>{{ basics.location.city }}</span>
+      <a href="mailto:{{ basics.email }}">{{ basics.email }}</a>
+      <a href="{{ basics.url }}">Website</a>
+      {% for profile in basics.profiles %}
+        <a href="{{ profile.url }}" aria-label="{{ profile.network }} profile">{{ profile.network }}</a>
+      {% endfor %}
+    </div>
+
+    <p class="cv-updated">Last reconciled {{ cv.meta.lastModified | date: '%-d %B %Y' }}</p>
+  </header>
+
+  <nav class="cv-section-nav" aria-label="CV sections">
+    <a href="#profile">Profile</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#presentations">Presentations</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#awards">Awards</a>
+    <a href="#service">Service</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <div class="cv-content">
+    <section class="cv-section" id="profile" aria-labelledby="profile-heading">
+      <h2 id="profile-heading">Research profile</h2>
+      <p class="cv-section-intro">
+        Bernardin works across applied mathematics, statistical machine learning and research engineering. His current work asks how imaging systems
+        can produce both useful reconstructions and defensible uncertainty estimates when measurements are noisy, incomplete or indirect.
+      </p>
+      {% for interest_group in cv.interests %}
+        <h3 class="sr-only">{{ interest_group.name }}</h3>
+        <ul class="cv-topic-list" aria-label="{{ interest_group.name }}">
+          {% for keyword in interest_group.keywords %}
+            <li>{{ keyword }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </section>
+
+    <section class="cv-section" id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <div class="cv-entry-list">
+        {% for item in cv.education %}
+          {% assign start_year = item.startDate | slice: 0, 4 %}
+          {% assign end_year = item.endDate | slice: 0, 4 %}
+          <article class="cv-entry">
+            <p class="cv-date">
+              {% if end_year == blank %}
+                {{ start_year }}-present
+              {% elsif start_year == end_year %}
+                {{ start_year }}
               {% else %}
-                {{ entry.contents }}
+                {{ start_year }}-{{ end_year }}
+              {% endif %}
+            </p>
+            <div class="cv-entry-body">
+              <h3>
+                {% if item.url != blank -%}
+                  <a href="{{ item.url }}">{{ item.studyType }}</a>
+                {%- else -%}
+                  {{- item.studyType -}}
+                {%- endif %}
+              </h3>
+              <p class="cv-entry-meta">{{ item.area }} · {{ item.institution }}</p>
+              <p class="cv-entry-location">{{ item.location }}</p>
+              {% if item.score != blank %}
+                <p class="cv-distinction">{{ item.score }}</p>
+              {% endif %}
+              {% if item.summary != blank %}
+                <p>{{ item.summary }}</p>
+              {% endif %}
+              {% if item.courses.size > 0 %}
+                <ul class="cv-bullets">
+                  {% for course in item.courses %}
+                    <li>{{ course }}</li>
+                  {% endfor %}
+                </ul>
               {% endif %}
             </div>
-          </div>
+          </article>
         {% endfor %}
       </div>
-    </article>
-  </div>
-{% else %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
+    </section>
 
-    <article>
-      <div class="cv">
-        {% for data in site.data.resume %}
-          {% if site.jsonresume and site.jsonresume.size > 0 %}
-            {% unless site.jsonresume contains data[0] %}
-              {% continue %}
-            {% endunless %}
-          {% endif %}
-          {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <a class="anchor" id="{{ data[0] }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
-            <div>
-              {% case data[0] %}
-                {% when 'basics' %}
-                  {% include resume/basics.liquid %}
-                {% when 'education' %}
-                  {% include resume/education.liquid %}
-                {% when 'work' %}
-                  {% include resume/work.liquid %}
-                {% when 'volunteer' %}
-                  {% include resume/volunteer.liquid %}
-                {% when 'projects' %}
-                  {% include resume/projects.liquid %}
-                {% when 'awards' %}
-                  {% include resume/awards.liquid %}
-                {% when 'skills' %}
-                  {% include resume/skills.liquid %}
-                {% when 'publications' %}
-                  {% include resume/publications.liquid %}
-                {% when 'languages' %}
-                  {% include resume/languages.liquid %}
-                {% when 'interests' %}
-                  {% include resume/interests.liquid %}
-                {% when 'certificates' %}
-                  {% include resume/certificates.liquid %}
-                {% when 'references' %}
-                  {% include resume/references.liquid %}
-                {% else %}
-
-              {% endcase %}
+    <section class="cv-section" id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Research and professional experience</h2>
+      <div class="cv-entry-list">
+        {% for item in cv.work %}
+          {% assign start_year = item.startDate | slice: 0, 4 %}
+          {% assign end_year = item.endDate | slice: 0, 4 %}
+          <article class="cv-entry">
+            <p class="cv-date">
+              {% if end_year == blank %}
+                {{ start_year }}-present
+              {% elsif start_year == end_year %}
+                {{ start_year }}
+              {% else %}
+                {{ start_year }}-{{ end_year }}
+              {% endif %}
+            </p>
+            <div class="cv-entry-body">
+              <h3>
+                {% if item.url != blank -%}
+                  <a href="{{ item.url }}">{{ item.position }}</a>
+                {%- else -%}
+                  {{- item.position -}}
+                {%- endif %}
+              </h3>
+              <p class="cv-entry-meta">{{ item.name }}</p>
+              <p class="cv-entry-location">{{ item.location }}</p>
+              {% if item.summary != blank %}
+                <p>{{ item.summary }}</p>
+              {% endif %}
+              <ul class="cv-bullets">
+                {% for highlight in item.highlights %}
+                  <li>{{ highlight }}</li>
+                {% endfor %}
+              </ul>
             </div>
-          </div>
+          </article>
         {% endfor %}
       </div>
-    </article>
+    </section>
+
+    <section class="cv-section" id="publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Peer-reviewed publications</h2>
+      <p class="cv-section-note">
+        Publication metadata is maintained in the site's bibliography. Links below lead to the archival publisher record and arXiv version where
+        available.
+      </p>
+      <div class="publications cv-bibliography">{% bibliography -f papers --group_by none --query @*[selected=true]* %}</div>
+    </section>
+
+    <section class="cv-section" id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Current and selected research projects</h2>
+      <div class="cv-project-grid">
+        {% for item in cv.projects %}
+          <article class="cv-project">
+            <div class="cv-project-heading">
+              <h3>
+                {% if item.url != blank -%}
+                  <a href="{{ item.url }}">{{ item.name }}</a>
+                {%- else -%}
+                  {{- item.name -}}
+                {%- endif %}
+              </h3>
+              <span class="cv-status">{{ item.status }}</span>
+            </div>
+            <p>{{ item.summary }}</p>
+            <ul class="cv-bullets">
+              {% for highlight in item.highlights %}
+                <li>{{ highlight }}</li>
+              {% endfor %}
+            </ul>
+            <p class="cv-keywords">{{ item.keywords | join: ' · ' }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="cv-section" id="presentations" aria-labelledby="presentations-heading">
+      <h2 id="presentations-heading">Selected talks, posters and presentations</h2>
+      <div class="publications cv-bibliography cv-presentations">{% bibliography -f talks --group_by year --query @*[cv=true]* %}</div>
+      <p class="cv-more-link"><a href="{{ '/talks/' | relative_url }}">View the complete presentations list</a></p>
+    </section>
+
+    <section class="cv-section" id="teaching" aria-labelledby="teaching-heading">
+      <h2 id="teaching-heading">Teaching and supervision</h2>
+      <div class="cv-entry-list">
+        {% for item in cv.teaching %}
+          {% assign start_year = item.startDate | slice: 0, 4 %}
+          {% assign end_year = item.endDate | slice: 0, 4 %}
+          <article class="cv-entry">
+            <p class="cv-date">
+              {% if end_year == blank %}
+                {{ start_year }}-present
+              {% elsif start_year == end_year %}
+                {{ start_year }}
+              {% else %}
+                {{ start_year }}-{{ end_year }}
+              {% endif %}
+            </p>
+            <div class="cv-entry-body">
+              <h3>
+                {% if item.url != blank -%}
+                  <a href="{{ item.url }}">{{ item.position }}</a>
+                {%- else -%}
+                  {{- item.position -}}
+                {%- endif %}
+              </h3>
+              <p class="cv-entry-meta">{{ item.institution }}</p>
+              <p class="cv-entry-location">{{ item.location }}</p>
+              <ul class="cv-bullets">
+                {% for highlight in item.highlights %}
+                  <li>{{ highlight }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="cv-section" id="awards" aria-labelledby="awards-heading">
+      <h2 id="awards-heading">Awards, scholarships and distinctions</h2>
+      <div class="cv-awards-grid">
+        {% for item in cv.awards %}
+          <article class="cv-award">
+            <p class="cv-date">{{ item.date }}</p>
+            <div>
+              <h3>
+                {% if item.url != blank -%}
+                  <a href="{{ item.url }}">{{ item.title }}</a>
+                {%- else -%}
+                  {{- item.title -}}
+                {%- endif %}
+              </h3>
+              <p class="cv-entry-meta">{{ item.awarder }}</p>
+              {% if item.summary != blank %}
+                <p>{{ item.summary }}</p>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="cv-section" id="service" aria-labelledby="service-heading">
+      <h2 id="service-heading">Scientific service, leadership and advanced training</h2>
+      {% for item in cv.volunteer %}
+        <article class="cv-entry cv-service-entry">
+          <p class="cv-date">{{ item.startDate }}-{{ item.endDate }}</p>
+          <div class="cv-entry-body">
+            <h3>
+              {% if item.url != blank -%}
+                <a href="{{ item.url }}">{{ item.position }}</a>
+              {%- else -%}
+                {{- item.position -}}
+              {%- endif %}
+            </h3>
+            <p class="cv-entry-meta">{{ item.organization }}</p>
+            <p>{{ item.summary }}</p>
+            <ul class="cv-bullets">
+              {% for highlight in item.highlights %}
+                <li>{{ highlight }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </article>
+      {% endfor %}
+
+      <h3 class="cv-subheading">Selected training schools</h3>
+      <div class="cv-training-grid">
+        {% for item in cv.training %}
+          <article class="cv-training">
+            <p class="cv-date">{{ item.date }}</p>
+            <div>
+              <h4>
+                {% if item.url != blank -%}
+                  <a href="{{ item.url }}">{{ item.name }}</a>
+                {%- else -%}
+                  {{- item.name -}}
+                {%- endif %}
+              </h4>
+              <p>{{ item.provider }} · {{ item.location }}</p>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="cv-section" id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Technical and mathematical skills</h2>
+      <div class="cv-skills-grid">
+        {% for item in cv.skills %}
+          <article class="cv-skill">
+            <h3>{{ item.name }}</h3>
+            <p class="cv-skill-level">{{ item.level }}</p>
+            <p>{{ item.keywords | join: ' · ' }}</p>
+          </article>
+        {% endfor %}
+      </div>
+
+      <h3 class="cv-subheading">Languages</h3>
+      <ul class="cv-language-list">
+        {% for item in cv.languages %}
+          <li>
+            <strong>{{ item.language }}</strong><span>{{ item.fluency }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
   </div>
-{% endunless %}
+</main>
