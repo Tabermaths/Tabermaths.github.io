@@ -82,8 +82,8 @@ This regenerates the modular TeX source, compiles the PDF with `latexmk`, copies
 | Greyscale legibility      | Accent retains sufficient tonal contrast; all content remains text-labelled      |
 | Responsive structure      | Single-column mobile rules and horizontal overflow protections present           |
 | Light/dark mode           | Uses the theme's existing colour variables; no hard-coded web background colours |
-| Jekyll production build   | Pending repository CI because the local workspace has no Ruby/Jekyll runtime     |
-| Internal link check       | Pending repository CI build                                                      |
+| Jekyll production build   | Passed in GitHub Actions; the local workspace has no Ruby/Jekyll runtime         |
+| Repository source links   | Passed in GitHub Actions                                                         |
 
 ## Files created or modified
 
