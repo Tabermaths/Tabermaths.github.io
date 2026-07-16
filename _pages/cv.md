@@ -1,5 +1,5 @@
 ---
-layout: cv
+layout: master-cv
 title: CV
 permalink: /cv/
 description: Research, education, publications, teaching and technical experience
