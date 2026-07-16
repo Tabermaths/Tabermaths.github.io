@@ -21,9 +21,9 @@ This directory contains the maintainable source and audit trail for the public m
 - Removed generic “data scientist enthusiast” wording, long degree-module inventories, old classroom projects and vacancy-specific objective statements.
 - Excluded unsupported percentage improvements, audience-size claims, pass-rate claims and other numerical impact statements found only in tailored variants.
 - Excluded Project Sueza impact claims and an unverified under-review paper until an authoritative record is available.
-- Kept the dual PhD open-ended as `2023-present` because supplied sources disagree on the expected completion year.
+- Kept the dual PhD open-ended as `2023-present` in accordance with Bernardin's public-CV preference; no expected completion year is shown.
 - Kept publication metadata in BibTeX and linked the website/PDF to DOI and arXiv records rather than duplicating hand-written citations.
-- Labelled the equivariant VAE work as current research; no publication status is claimed.
+- Labelled the equivariant VAE work as a manuscript in preparation; no preprint or publication status is claimed until a public record exists.
 - The website presents the complete reconciled record. The four-page PDF selects four presentations, six principal awards and two advanced training schools to remain readable.
 
 ## Source-of-truth architecture
@@ -54,18 +54,17 @@ make -C cv all
 
 This regenerates the modular TeX source, compiles the PDF with `latexmk`, copies it to `assets/pdf/Bernardin_Tamo_Amougou_CV.pdf`, and checks that text extraction succeeds.
 
-## Facts requiring manual verification
+## Confirmed public-CV decisions
 
-- `[VERIFY DATE]` Expected dual-PhD completion: sources variously imply 2026 and 2027. The public CV therefore says `2023-present`.
-- `[VERIFY ROLE TITLE]` Confirm whether the current Heriot-Watt teaching appointment should publicly be called ATER, teacher, tutor, teaching assistant, or a combination.
-- `[VERIFY ROLE TITLE AND DATES]` Confirm the formal MAP5 title and precise start/end months; public material is not fully consistent.
-- `[VERIFY DATE]` Confirm precise months for the Hausdorff Center internship and Neuromatch appointments if month-level dates are desired.
-- `[VERIFY PUBLICATION STATUS]` Confirm whether the equivariant self-supervised VAE has a citable preprint or formal manuscript status. It is currently labelled only as current research.
-- `[VERIFY AWARD WORDING]` Confirm the official title and year of the AIMS Cameroon “Gender Balance Prize, Three Minute Thesis”.
-- `[VERIFY QUALIFICATION NAMES]` Confirm the exact official award names for the CETIC and ENS Yaoundé qualifications; cautious descriptive wording is used meanwhile.
-- `[VERIFY LANGUAGE LEVEL]` Confirm whether `English: Fluent (C1)` and `German: Basic` should remain public.
-- `[VERIFY CONTACT]` Confirm that `bt2027@hw.ac.uk` is the preferred long-term public email address.
-- `[ADD DOI OR ARXIV LINK]` Add an archival link for any future preprint before changing its status on the public CV.
+- The dual PhD is shown as `2023-present`, without an expected completion or graduation year.
+- The current Heriot-Watt appointment is titled `Teaching Assistant`.
+- The MAP5 role, Hausdorff Center internship and Neuromatch appointments retain their reconciled titles and year-level dates.
+- The existing CETIC and ENS qualification wording and the AIMS Cameroon Gender Balance/Three Minute Thesis distinction are retained.
+- English is described as `Advanced professional proficiency`, without asserting a new formal test-equivalent C2 level; German remains `Basic`.
+- `bernardin.tamo@aims-cameroon.org` is the long-term public contact address.
+- The equivariant self-supervised VAE is labelled `Manuscript in preparation`.
+
+Future maintenance: add a DOI or arXiv link and update the status only when an archival ESS-VAE record becomes publicly available.
 
 ## Validation record
 

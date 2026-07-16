@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Bernardin
 middle_name: TAMO
 last_name: AMOUGOU
-email: bt2027@hw.ac.uk
+email: bernardin.tamo@aims-cameroon.org
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Dual PhD candidate in Bayesian imaging, machine learning, uncertainty quantification, and inverse problems at Heriot-Watt University and Université Paris Cité.
 footer_text: >

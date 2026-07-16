@@ -16,6 +16,8 @@ PAPERS_PATH = REPO_ROOT / "_bibliography" / "papers.bib"
 TALKS_PATH = REPO_ROOT / "_bibliography" / "talks.bib"
 PDF_PATH = REPO_ROOT / "assets" / "pdf" / "Bernardin_Tamo_Amougou_CV.pdf"
 LOG_PATH = REPO_ROOT / "cv" / "latex" / "build" / "main.log"
+CONFIG_PATH = REPO_ROOT / "_config.yml"
+ABOUT_PATH = REPO_ROOT / "_pages" / "about.md"
 
 
 def require(condition: bool, message: str) -> None:
@@ -50,10 +52,29 @@ def main() -> None:
     meta = resume["meta"]
 
     require(basics["name"] == "Bernardin TAMO AMOUGOU", "Professional name is inconsistent")
+    require(
+        basics["email"] == "bernardin.tamo@aims-cameroon.org",
+        "The long-term AIMS email must be the public CV contact",
+    )
     require(not basics.get("phone"), "A private phone number must not appear in the public source")
     require(not basics["location"].get("address"), "A street address must not appear in the public source")
     require(not basics["location"].get("postalCode"), "A postcode must not appear in the public source")
     require("[VERIFY" not in RESUME_PATH.read_text(encoding="utf-8"), "Verification placeholders must stay out of public data")
+
+    public_source = "\n".join(
+        path.read_text(encoding="utf-8") for path in (RESUME_PATH, CONFIG_PATH, ABOUT_PATH)
+    )
+    require("bt2027@hw.ac.uk" not in public_source, "The temporary Heriot-Watt email remains on a public surface")
+    require("ATER" not in public_source, "The current teaching appointment must not be labelled ATER")
+
+    phd = next(item for item in resume["education"] if item["studyType"] == "Dual PhD candidate")
+    require(not phd["endDate"], "The public CV must not state an expected PhD completion year")
+    current_teaching = next(item for item in resume["teaching"] if item["institution"] == "Heriot-Watt University")
+    require(current_teaching["position"] == "Teaching Assistant", "Current teaching title is inconsistent")
+    ess_vae = next(item for item in resume["projects"] if item["name"].startswith("Equivariant Self-Supervised VAE"))
+    require(ess_vae["status"] == "Manuscript in preparation", "ESS-VAE status is inconsistent")
+    english = next(item for item in resume["languages"] if item["language"] == "English")
+    require(english["fluency"] == "Advanced professional proficiency", "Public English level is inconsistent")
 
     profiles = basics["profiles"]
     require(len({item["network"] for item in profiles}) == len(profiles), "Duplicate profile network")

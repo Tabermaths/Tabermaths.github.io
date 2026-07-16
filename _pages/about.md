@@ -9,7 +9,7 @@ profile:
   image: profile_bernnardin_2026.jpg
   image_circular: true
   more_info: >
-    <p><i class="fas fa-envelope"></i> <a href="mailto:bt2027@hw.ac.uk">bt2027@hw.ac.uk</a></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:bernardin.tamo@aims-cameroon.org">bernardin.tamo@aims-cameroon.org</a></p>
     <p><i class="ai ai-google-scholar"></i> <a href="https://scholar.google.com/citations?user=qlbzb1AAAAAJ">Google Scholar</a></p>
 
 nav_order: 1

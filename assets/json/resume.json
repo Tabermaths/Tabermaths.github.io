@@ -1,7 +1,7 @@
 {
   "meta": {
     "canonical": "https://tabermaths.github.io/cv/",
-    "lastModified": "2026-07-15",
+    "lastModified": "2026-07-16",
     "publicationSource": "_bibliography/papers.bib",
     "presentationSource": "_bibliography/talks.bib",
     "selectedPublicationKeys": ["tamo2025poisson_conformal", "everink2025selfsupervised_conformal"],
@@ -20,7 +20,7 @@
     "name": "Bernardin TAMO AMOUGOU",
     "label": "Dual PhD Researcher in Machine Learning, Bayesian Imaging and Uncertainty Quantification",
     "image": "",
-    "email": "bt2027@hw.ac.uk",
+    "email": "bernardin.tamo@aims-cameroon.org",
     "phone": "",
     "url": "https://tabermaths.github.io/",
     "summary": "Mathematically grounded machine-learning researcher developing uncertainty-aware methods for reconstructing images from noisy, incomplete and indirect measurements. Research spans Bayesian inverse problems, self-supervised conformal prediction, posterior sampling and generative priors, with peer-reviewed work in Gaussian and Poisson imaging. Combines statistical modelling and optimisation with PyTorch/JAX implementation and GPU/HPC experimentation for scientific and medical imaging.",
@@ -195,7 +195,7 @@
         "Presented the work at the 2026 ICMS workshop on imaging inverse problems and generative models."
       ],
       "keywords": ["VAE", "Equivariance", "Posterior sampling", "Tweedie identities", "PyTorch"],
-      "status": "Current research",
+      "status": "Manuscript in preparation",
       "startDate": "2024",
       "endDate": "",
       "url": "https://gdr-iasis.cnrs.fr/reunions/journees-modeles-proxy-et-co-conception-capteurs-hybrides-et-algorithmes-pour-des-systemes-innovants/"
@@ -232,13 +232,13 @@
   "teaching": [
     {
       "institution": "Heriot-Watt University",
-      "position": "Teacher, Tutor and Teaching Assistant",
+      "position": "Teaching Assistant",
       "url": "https://tabermaths.github.io/teaching/",
       "startDate": "2023",
       "endDate": "",
       "location": "Edinburgh, United Kingdom",
       "highlights": [
-        "Teacher for Statistical Models B (2025-2026) and Introduction to University Mathematics (2024-2025).",
+        "Taught Statistical Models B (2025-2026) and Introduction to University Mathematics (2024-2025).",
         "Led tutorials and laboratories across Bayesian inference, stochastic processes, probability and statistics, data science, numerical analysis, optimisation and scientific programming.",
         "Supported marking, assessment delivery and student guidance across undergraduate and postgraduate courses."
       ]
@@ -411,7 +411,7 @@
     },
     {
       "language": "English",
-      "fluency": "Fluent (C1)",
+      "fluency": "Advanced professional proficiency",
       "icon": ""
     },
     {
