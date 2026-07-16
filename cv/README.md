@@ -28,13 +28,13 @@ This directory contains the maintainable source and audit trail for the public m
 
 ## Source-of-truth architecture
 
-| Content                                                                           | Authoritative file                     | Consumers                                   |
-| --------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------- |
-| Profile, education, roles, projects, teaching, awards, service, skills, languages | `assets/json/resume.json`              | `/cv/` and PDF generator                    |
-| Peer-reviewed publications                                                        | `_bibliography/papers.bib`             | Publications page, `/cv/` and PDF generator |
-| Talks and posters                                                                 | `_bibliography/talks.bib`              | Talks page, `/cv/` and PDF generator        |
-| Web presentation                                                                  | `_layouts/cv.liquid`, `_sass/_cv.scss` | Responsive `/cv/` page                      |
-| PDF presentation                                                                  | `cv/latex/`                            | Downloadable A4 PDF                         |
+| Content                                                                           | Authoritative file                            | Consumers                                   |
+| --------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------- |
+| Profile, education, roles, projects, teaching, awards, service, skills, languages | `assets/json/resume.json`                     | `/cv/` and PDF generator                    |
+| Peer-reviewed publications                                                        | `_bibliography/papers.bib`                    | Publications page, `/cv/` and PDF generator |
+| Talks and posters                                                                 | `_bibliography/talks.bib`                     | Talks page, `/cv/` and PDF generator        |
+| Web presentation                                                                  | `_layouts/master-cv.liquid`, `_sass/_cv.scss` | Responsive `/cv/` page                      |
+| PDF presentation                                                                  | `cv/latex/`                                   | Downloadable A4 PDF                         |
 
 The PDF generator is `cv/scripts/generate_cv.py`. It reads the JSON and BibTeX records, writes `cv/latex/generated/content.tex`, and leaves the generated source committed for inspection.
 
@@ -87,7 +87,7 @@ Future maintenance: add a DOI or arXiv link and update the status only when an a
 ## Files created or modified
 
 - `_pages/cv.md`
-- `_layouts/cv.liquid`
+- `_layouts/master-cv.liquid`
 - `_sass/_cv.scss`
 - `_config.yml`
 - `assets/json/resume.json`
